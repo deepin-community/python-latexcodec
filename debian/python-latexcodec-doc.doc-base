@@ -1,0 +1,9 @@
+Document: python-latexcodec
+Title: latexcodec's documentation
+Author: Matthias C. M. Troffaes <matthias.troffaes@gmail.com>
+Abstract: latexcodec is a LaTeX lexer and codec library for Python
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python-latexcodec-doc/html/index.html
+Files: /usr/share/doc/python-latexcodec-doc/html/*.html

@@ -1,0 +1,113 @@
+python-latexcodec (2.0.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 10 to 12.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Dmitry Shachnev ]
+  * New upstream release.
+    - Compatible with Python 3.9 (closes: #972728, #973032).
+  * Add GitLab CI configuration.
+  * Switch from nose to pytest for testing.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 27 Oct 2020 21:12:56 +0300
+
+python-latexcodec (1.0.7-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 1.0.7
+  * Remove Python 2 autopkgtest (Closes: #945261)
+  * d/control: Bump Standard-Version to 4.4.1
+  * d/control: Mark python-latexcodec-doc like MultiArch foreign
+  * Remove patch that is not more applicable on current version.
+
+ -- Emmanuel Arias <eamanu@yaerobi.com>  Tue, 26 Nov 2019 22:48:10 -0300
+
+python-latexcodec (1.0.5-2) unstable; urgency=medium
+
+  * Team upload.
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/control: Remove ancient X-Python-Version field
+  * d/control: Remove ancient X-Python3-Version field
+  * Use debhelper-compat instead of debian/compat.
+  * Drop Python 2 support (Closes: #937878).
+
+ -- Ondřej Nový <onovy@debian.org>  Mon, 09 Sep 2019 09:06:17 +0200
+
+python-latexcodec (1.0.5-1) unstable; urgency=medium
+
+  * Source tarballs from PyPI
+  * Switch from git-dpm to gbp
+  * New upstream version 1.0.5
+  * Drop the patch queue, no longer required
+  * Use secure URI in copyright Format
+  * Update Source field to the PyPI URI
+  * Downgrade install of -doc package to Suggests
+  * Drop Recommends of -doc package
+  * Add missing Built-Using metadata
+  * Build the docs using the upstream Makefile
+  * Build the documentation with Python 3
+    - Use the Python 3 version of Sphinx
+    - New patch Fix-build-of-docs-with-Python-3.patch
+  * Add support for the nodoc build profile
+  * Add support for the nocheck build profile
+  * Drop superfluous installchangelogs override
+  * Bump debhelper version to 10, no changes required
+  * Bump standards version to 4.0.0, no changes required
+  * Improve the autopkgtest suite
+    - Replace individual test scripts by Test-Commands
+    - Run tests outside the source tree
+    - Run tests for all supported Python versions
+  * Adopt the package
+    - Add myself to Uploaders
+    - Add myself to copyright
+    - Remove Daniel Stender from Uploaders (Closes: #840034)
+
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Thu, 13 Jul 2017 16:23:07 +0100
+
+python-latexcodec (1.0.3-4) unstable; urgency=medium
+
+  * deb/rules: set discarded http_proxy for sphinx-build (Closes: #830604).
+
+ -- Daniel Stender <stender@debian.org>  Sat, 06 Aug 2016 11:12:19 +0200
+
+python-latexcodec (1.0.3-3) unstable; urgency=medium
+
+  * deb/rules: added -f- to date for reproducible builds (Closes: #824454).
+
+ -- Daniel Stender <stender@debian.org>  Sun, 29 May 2016 18:23:46 +0200
+
+python-latexcodec (1.0.3-2) unstable; urgency=medium
+
+  * deb/control: corrected X-Python3-version.
+  * build docs package:
+    + added package description in deb/control.
+    + added Recommends to module package description in deb/control,
+      removed sphinxdoc:Depends.
+    + build HTML documentation into docs package in deb/rules.
+    + contribute CHANGELOG into both packages in deb/rules.
+    + renamed deb/python3-latexcodec.doc-base accordingly, updated
+      paths and Document field.
+  * build Python2 package:
+    + added package description in deb/control.
+    + added Python2 package counterparts to build-deps in deb/control.
+    + added X-Python-Version in deb/control.
+    + added dh_python2 to Debhelper addons to use in deb/rules.
+    + extended DEP-8 tests.
+
+ -- Daniel Stender <stender@debian.org>  Tue, 10 May 2016 16:11:44 +0200
+
+python-latexcodec (1.0.3-1) unstable; urgency=medium
+
+  * Initial release (Closes: #801309).
+
+ -- Daniel Stender <stender@debian.org>  Mon, 09 May 2016 14:25:08 +0200
